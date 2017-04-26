@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>5e5a3cb9-7e36-47f0-b947-4746109e7482</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>EloBuddy.Fedora</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="59c808ec-e020-479f-b091-7ebabc4ab6cd.cs" />
+    <Compile Include="84e83c72-0dcd-47c1-bbc1-1e02d913ea75.cs" />
+    <Compile Include="ad006d24-afbe-4b65-aa35-49e82311136c.cs" />
+    <Compile Include="ef6470be-dfeb-4249-a9df-7686881e6f63.cs" />
+    <Compile Include="ccadf67c-adc9-428a-97a3-adafd816aed3.cs" />
+    <Compile Include="62d21e26-c727-478e-bf7e-cbbd9253f0a0.cs" />
+    <Compile Include="1af1a343-3453-434d-ac05-5249828d2733.cs" />
+    <Compile Include="8d2b3384-7b8a-49fe-9d5c-f310e1ba5687.cs" />
+    <Compile Include="8e972650-dd52-4f87-a373-12ef0dfeeb3a.cs" />
+    <Compile Include="eb73e174-b3e9-4841-b387-3d23e72cb706.cs" />
+    <Compile Include="7884ed39-c085-42dc-b1b4-065c0094cbd3.cs" />
+    <Compile Include="91f959f6-bdd0-4337-9577-1f30686fd750.cs" />
+    <Compile Include="b578a97e-2ddb-4a70-95c4-184a482c4dec.cs" />
+    <Compile Include="55dea580-366b-4af9-820b-43c44b47bcf1.cs" />
+    <Compile Include="bd1c81f7-61da-4c8f-9382-6084b6eb1b2f.cs" />
+    <Compile Include="9dac18d6-465f-488a-bee7-4d9445a09381.cs" />
+    <Compile Include="df998a45-deb2-4390-96d5-bbb2197ca2f5.cs" />
+    <Compile Include="8bead2b4-0e23-42f8-97a5-ac988e4c994e.cs" />
+    <Compile Include="84c2d29b-0e14-43ae-9734-b1bfd204b3ba.cs" />
+    <Compile Include="b000950a-4c72-45b0-91b9-f4626217ebed.cs" />
+    <Compile Include="7ceb5762-7eca-491b-9317-b6920662767e.cs" />
+    <Compile Include="c0ffff20-e260-49a5-b9e0-190ec14c96a3.cs" />
+    <Compile Include="0b789111-46b1-4441-bf1a-04581d9982bc.cs" />
+    <Compile Include="a07df0f8-b61e-49dd-91a0-6340f2cf47e9.cs" />
+    <Compile Include="23d7730e-21b5-4c53-9dc6-507139eaa215.cs" />
+    <Compile Include="fb4dda97-3ceb-4d9d-a503-f62f67feaa40.cs" />
+    <Compile Include="291566f5-4a97-42a4-bf87-f049789fd0dd.cs" />
+    <Compile Include="01472147-eccf-4db1-a8a2-2609d46c22e8.cs" />
+    <Compile Include="cf8c875a-5322-454c-8dec-0c4d905d1e63.cs" />
+    <Compile Include="c37d252c-1a0b-4115-8892-09fbfc756986.cs" />
+    <Compile Include="fdffdc3a-1b61-44a1-aa50-06d2b1a79ca3.cs" />
+    <Compile Include="c41c7998-4abb-42ec-9235-c7d842233094.cs" />
+    <Compile Include="52461405-7203-4589-b37c-d1949c6c575f.cs" />
+    <Compile Include="9d65d4ea-eb7f-48b0-bc47-10ae19438c3e.cs" />
+    <Compile Include="5ff9f1ae-37f5-4198-9616-4efedb68840d.cs" />
+    <Compile Include="a5914945-2283-42af-90e7-2722f17892ae.cs" />
+    <Compile Include="31e377cf-0bf5-4ad7-a073-e4a3c2bc38fa.cs" />
+    <Compile Include="e74dadd1-2fe0-4a11-b028-8a61ef01893b.cs" />
+    <Compile Include="fe144b56-cc28-4819-bc6a-027d1670a047.cs" />
+    <Compile Include="a1aea14e-6203-4165-b523-81d926af756e.cs" />
+    <Compile Include="a4640047-e59e-4e78-920c-0a0cf202c65f.cs" />
+    <Compile Include="e35e7c30-4d1b-4268-b0cf-a7e98ef30c82.cs" />
+    <Compile Include="b8bad509-e310-463c-99cc-082a351d5a17.cs" />
+    <Compile Include="9a530cdb-2d7c-483f-9c46-98c666dc570c.cs" />
+    <Compile Include="92032d9a-b58e-485b-b5d8-e5fc03956b57.cs" />
+    <Compile Include="2d59eff7-0a7a-4456-8258-46750ae6d3a5.cs" />
+    <Compile Include="5c27c782-845a-46d8-a164-92baaa92d0b9.cs" />
+    <Compile Include="6ccdbd33-56b0-4c72-bbca-8d86833328bf.cs" />
+    <Compile Include="a11176fb-24b3-4c17-b3c2-095d02d9dc31.cs" />
+    <Compile Include="7c7420bf-39f1-4c09-b0a3-c11556763b4c.cs" />
+    <Compile Include="86a309e6-d240-4d52-930f-c7fd36d82004.cs" />
+    <Compile Include="11d562da-51ab-4dcb-86bb-40fdb1b3c8ac.cs" />
+    <Compile Include="28b9478a-53ba-4a1a-9e41-10cbd8880100.cs" />
+    <Compile Include="a6d8c5a1-7c65-4312-a152-07b255327300.cs" />
+    <Compile Include="36e5bac8-9931-4d3d-a570-41f27e8ac89f.cs" />
+    <Compile Include="77e332b0-b93a-490b-9b12-d9fb44589b7d.cs" />
+    <Compile Include="44d3d143-e76a-4d1e-bf5f-9b248b4fee8b.cs" />
+    <Compile Include="c791de68-ec28-4834-bde2-b98d59c30419.cs" />
+    <Compile Include="4c51e699-b616-4099-8a46-11307d31900c.cs" />
+    <Compile Include="083b5ed3-4c2a-43be-a472-e66a960f8009.cs" />
+    <Compile Include="c7755a64-c292-480f-a4c2-661a891b6d35.cs" />
+    <Compile Include="572beac4-2fb3-47cb-8283-14dc48286ea1.cs" />
+    <Compile Include="68db811c-be2b-4ed4-a347-1533910bb246.cs" />
+    <Compile Include="5fd08456-3414-40b3-b266-1f9bb4c8e540.cs" />
+    <Compile Include="c5aaf1c8-b83e-46e1-aae3-d17ffdb8ab98.cs" />
+    <Compile Include="7350a5a8-3683-4064-b2e1-9fcbc4a0d9ee.cs" />
+    <Compile Include="fadd3172-ee5f-403a-9b14-f06bd943dbe2.cs" />
+    <Compile Include="28ab89b5-ec71-4843-b84a-895a5276bae0.cs" />
+    <Compile Include="6946b1fd-0273-4f62-b9cb-5c22d9b2d1d8.cs" />
+    <Compile Include="b5eaae55-726a-4a94-a844-45725d5f18f6.cs" />
+    <Compile Include="6f7c57cb-8b96-41ef-8ffb-e696b66ab7b5.cs" />
+    <Compile Include="6e6d4f54-25ae-4f76-95eb-abfc33cda877.cs" />
+    <Compile Include="e2735ad7-a257-4bca-b205-ab0b821c16ff.cs" />
+    <Compile Include="116dad92-ac9a-44fc-a54c-96db1bebc877.cs" />
+    <Compile Include="37fb6544-a7a4-4cde-a058-785c2977c315.cs" />
+    <Compile Include="66bdb410-e636-4745-90af-f76581c5b437.cs" />
+    <Compile Include="cb4ab425-6b45-45f9-91b2-1d5c2c246de5.cs" />
+    <Compile Include="dbef04ca-6dfd-4976-9afc-afd29a42640f.cs" />
+    <Compile Include="ab57093e-dab7-47f0-a7e7-ce0e7824119f.cs" />
+    <Compile Include="69b9b8fd-717a-433c-acd7-886e1504cc25.cs" />
+    <Compile Include="213a671b-f255-4a6e-8536-a2fe4d26e9bd.cs" />
+    <Compile Include="688543fb-1412-45da-9ca3-1453f5fdd733.cs" />
+    <Compile Include="ad983ecf-2249-409e-b700-e03616280837.cs" />
+    <Compile Include="c670ee55-2cf4-4ebe-8a2f-03b23c08d946.cs" />
+    <Compile Include="86ba3b21-674b-4554-be26-b6744a2f2170.cs" />
+    <Compile Include="4d710224-1622-474c-a1aa-e8357ecef5d5.cs" />
+    <Compile Include="80e9f22f-69a7-41ae-8d84-12a133ea90ff.cs" />
+    <Compile Include="f60dded2-529a-471e-a159-a50190b216c2.cs" />
+    <Compile Include="a74e9939-e454-46bf-854f-df9fbf5fbb7a.cs" />
+    <Compile Include="5290cecf-d695-49f3-94b4-044af3831235.cs" />
+    <Compile Include="6aa4d317-71ff-4fd9-ad0d-ee9fa9772da3.cs" />
+    <Compile Include="87674c2a-3c61-46ea-b422-b77dc3562a24.cs" />
+    <Compile Include="652c8344-f4d1-4afb-bf6f-bc3471923ad7.cs" />
+    <Compile Include="4a6433f0-1187-44cb-8892-846b529d4d38.cs" />
+    <Compile Include="c053fc16-2087-4abb-b9e1-8ae29afc9927.cs" />
+    <Compile Include="53d92fb2-1389-4889-b2be-232d08108e71.cs" />
+    <Compile Include="53b1a891-9277-4e21-b1cf-65994383465d.cs" />
+    <Compile Include="8ab447cc-7b58-4de2-b4ac-6d13fbd77c8d.cs" />
+    <Compile Include="92e9fc67-1e13-42e4-8baa-4bc3288d958a.cs" />
+    <Compile Include="ecccfb14-1c6b-4da8-b071-680b70857392.cs" />
+    <Compile Include="287c66f9-6464-45c5-bf93-035b758ae863.cs" />
+    <Compile Include="7165389b-2d8b-4b42-b258-9a49823d1952.cs" />
+    <Compile Include="19e7e0fc-ba68-4027-b0bd-570025090279.cs" />
+    <Compile Include="4810bff5-20c8-4359-9fc3-181f81751eca.cs" />
+    <Compile Include="a94a4979-c26c-44fd-a1b5-192315e5be67.cs" />
+    <Compile Include="769edcab-9581-4bd9-bc9e-cf703f1a52db.cs" />
+    <Compile Include="db1bf6a8-a644-4bc7-9829-1077868dff69.cs" />
+    <Compile Include="EloBuddy\Fedora\Core.cs" />
+    <EmbeddedResource Include="             " />
+    <EmbeddedResource Include="c434d6e273c74c3497dbf5ed48e7e9c7" />
+  </ItemGroup>
+</Project>

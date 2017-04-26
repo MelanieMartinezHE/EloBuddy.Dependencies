@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3f332448-6757-41a7-9552-106e100ca37e</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>EloBuddy.Sandbox</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="EloBuddy" />
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Numerics" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="EloBuddy\Sandbox\NativeImports.cs" />
+    <Compile Include="EloBuddy\Sandbox\SandboxDomain.cs" />
+    <Compile Include="EloBuddy\Sandbox\Extensions.cs" />
+    <Compile Include="EloBuddy\Sandbox\Input.cs" />
+    <Compile Include="EloBuddy\Sandbox\Logs.cs" />
+    <Compile Include="EloBuddy\Sandbox\PublicKeys.cs" />
+    <Compile Include="EloBuddy\Sandbox\Sandbox.cs" />
+    <Compile Include="EloBuddy\Sandbox\SandboxConfig.cs" />
+    <Compile Include="EloBuddy\Sandbox\Utils\Md5Hash.cs" />
+    <Compile Include="EloBuddy\Sandbox\Shared\Configuration.cs" />
+    <Compile Include="EloBuddy\Sandbox\Shared\ILoaderService.cs" />
+    <Compile Include="EloBuddy\Sandbox\Shared\LoaderFileData.cs" />
+    <Compile Include="EloBuddy\Sandbox\Shared\FileData.cs" />
+    <Compile Include="EloBuddy\Sandbox\Shared\SharedAddon.cs" />
+    <Compile Include="EloBuddy\Sandbox\Shared\ServiceFactory.cs" />
+    <Compile Include="EloBuddy\Sandbox\Data\Authenticator.cs" />
+    <Compile Include="EloBuddy\Sandbox\Cryptography\RijndaelHelper.cs" />
+    <Compile Include="EloBuddy\Sandbox\Cryptography\CustomRsa.cs" />
+  </ItemGroup>
+</Project>

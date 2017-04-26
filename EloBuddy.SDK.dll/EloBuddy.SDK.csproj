@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>74fa75c2-b333-44d8-905a-3db3ce4d42cf</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>EloBuddy.SDK</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="EloBuddy" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="SharpDX" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="SharpDX.Direct3D9" />
+    <Reference Include="EloBuddy.Sandbox" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="ClipperLib\DoublePoint.cs" />
+    <Compile Include="ClipperLib\PolyTree.cs" />
+    <Compile Include="ClipperLib\PolyNode.cs" />
+    <Compile Include="ClipperLib\Int128.cs" />
+    <Compile Include="ClipperLib\IntPoint.cs" />
+    <Compile Include="ClipperLib\IntRect.cs" />
+    <Compile Include="ClipperLib\ClipType.cs" />
+    <Compile Include="ClipperLib\PolyType.cs" />
+    <Compile Include="ClipperLib\PolyFillType.cs" />
+    <Compile Include="ClipperLib\JoinType.cs" />
+    <Compile Include="ClipperLib\EndType.cs" />
+    <Compile Include="ClipperLib\EdgeSide.cs" />
+    <Compile Include="ClipperLib\Direction.cs" />
+    <Compile Include="ClipperLib\TEdge.cs" />
+    <Compile Include="ClipperLib\IntersectNode.cs" />
+    <Compile Include="ClipperLib\MyIntersectNodeSort.cs" />
+    <Compile Include="ClipperLib\LocalMinima.cs" />
+    <Compile Include="ClipperLib\Scanbeam.cs" />
+    <Compile Include="ClipperLib\OutRec.cs" />
+    <Compile Include="ClipperLib\OutPt.cs" />
+    <Compile Include="ClipperLib\Join.cs" />
+    <Compile Include="ClipperLib\ClipperBase.cs" />
+    <Compile Include="ClipperLib\Clipper.cs" />
+    <Compile Include="ClipperLib\ClipperOffset.cs" />
+    <Compile Include="ClipperLib\ClipperException.cs" />
+    <Compile Include="EloBuddy\SDK\AddonManager.cs" />
+    <Compile Include="EloBuddy\SDK\Auth.cs" />
+    <Compile Include="EloBuddy\SDK\Bootstrap.cs" />
+    <Compile Include="EloBuddy\SDK\BootstrapRun.cs" />
+    <Compile Include="EloBuddy\SDK\DamageLibraryManager.cs" />
+    <Compile Include="EloBuddy\SDK\DamageLibrary.cs" />
+    <Compile Include="EloBuddy\SDK\DefaultSettings.cs" />
+    <Compile Include="EloBuddy\SDK\Geometry.cs" />
+    <Compile Include="EloBuddy\SDK\Item.cs" />
+    <Compile Include="EloBuddy\SDK\ItemInfo.cs" />
+    <Compile Include="EloBuddy\SDK\ItemGold.cs" />
+    <Compile Include="EloBuddy\SDK\ItemStats.cs" />
+    <Compile Include="EloBuddy\SDK\ItemImage.cs" />
+    <Compile Include="EloBuddy\SDK\WindowMessages.cs" />
+    <Compile Include="EloBuddy\SDK\Messages.cs" />
+    <Compile Include="EloBuddy\SDK\Core.cs" />
+    <Compile Include="EloBuddy\SDK\PrecalculatedAutoAttackDamage.cs" />
+    <Compile Include="EloBuddy\SDK\Damage.cs" />
+    <Compile Include="EloBuddy\SDK\EntityManager.cs" />
+    <Compile Include="EloBuddy\SDK\Extensions.cs" />
+    <Compile Include="EloBuddy\SDK\Orbwalker.cs" />
+    <Compile Include="EloBuddy\SDK\Prediction.cs" />
+    <Compile Include="EloBuddy\SDK\PredictionResult.cs" />
+    <Compile Include="EloBuddy\SDK\Spell.cs" />
+    <Compile Include="EloBuddy\SDK\SpellCastException.cs" />
+    <Compile Include="EloBuddy\SDK\StreamingMode.cs" />
+    <Compile Include="EloBuddy\SDK\TargetSelector.cs" />
+    <Compile Include="EloBuddy\SDK\Utils\Logger.cs" />
+    <Compile Include="EloBuddy\SDK\Utils\TimeMeasure.cs" />
+    <Compile Include="EloBuddy\SDK\Utils\Utilities.cs" />
+    <Compile Include="EloBuddy\SDK\ThirdParty\Glide\Ease.cs" />
+    <Compile Include="EloBuddy\SDK\ThirdParty\Glide\GlideInfo.cs" />
+    <Compile Include="EloBuddy\SDK\ThirdParty\Glide\Lerper.cs" />
+    <Compile Include="EloBuddy\SDK\ThirdParty\Glide\Tween.cs" />
+    <Compile Include="EloBuddy\SDK\ThirdParty\Glide\Tweener.cs" />
+    <Compile Include="EloBuddy\SDK\Spells\CollisionType.cs" />
+    <Compile Include="EloBuddy\SDK\Spells\SpellType.cs" />
+    <Compile Include="EloBuddy\SDK\Spells\SpellDatabase.cs" />
+    <Compile Include="EloBuddy\SDK\Spells\SpellInfo.cs" />
+    <Compile Include="EloBuddy\SDK\Spells\SummonerSpellsEnum.cs" />
+    <Compile Include="EloBuddy\SDK\Spells\SummonerSpells.cs" />
+    <Compile Include="EloBuddy\SDK\Rendering\Circle.cs" />
+    <Compile Include="EloBuddy\SDK\Rendering\Line.cs" />
+    <Compile Include="EloBuddy\SDK\Rendering\Sprite.cs" />
+    <Compile Include="EloBuddy\SDK\Rendering\Text.cs" />
+    <Compile Include="EloBuddy\SDK\Rendering\TextureLoader.cs" />
+    <Compile Include="EloBuddy\SDK\Properties\Resources.cs" />
+    <Compile Include="EloBuddy\SDK\Notifications\INotification.cs" />
+    <Compile Include="EloBuddy\SDK\Notifications\Notifications.cs" />
+    <Compile Include="EloBuddy\SDK\Notifications\NotificationBase.cs" />
+    <Compile Include="EloBuddy\SDK\Notifications\NotificationTexture.cs" />
+    <Compile Include="EloBuddy\SDK\Notifications\SimpleNotification.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\AddonContainer.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\ValueContainer.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\Button.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\ContainerView.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\Control.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\IControlContainer!1.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\ControlContainerBase.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\ControlContainer.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\ControlContainer!1.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\SimpleControlContainer.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\SimpleControlContainer!1.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\ControlList!1.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\DynamicControl.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\EmptyControl.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\ISerializeable.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\MainMenu.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\Menu.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\Theme.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\ThemeManager.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\Values\CheckBox.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\Values\ComboBox.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\Values\GroupLabel.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\Values\IValue!1.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\Values\KeyBind.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\Values\Label.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\Values\Separator.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\Values\Slider.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\Values\ValueBase!1.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\Values\ValueBase.cs" />
+    <Compile Include="EloBuddy\SDK\Menu\Values\ValueDeserializationException.cs" />
+    <Compile Include="EloBuddy\SDK\Events\Dash.cs" />
+    <Compile Include="EloBuddy\SDK\Events\Loading.cs" />
+    <Compile Include="EloBuddy\SDK\Events\Gapcloser.cs" />
+    <Compile Include="EloBuddy\SDK\Events\Interrupter.cs" />
+    <Compile Include="EloBuddy\SDK\Events\Teleport.cs" />
+    <Compile Include="EloBuddy\SDK\Enumerations\DangerLevel.cs" />
+    <Compile Include="EloBuddy\SDK\Enumerations\HitChance.cs" />
+    <Compile Include="EloBuddy\SDK\Enumerations\LogLevel.cs" />
+    <Compile Include="EloBuddy\SDK\Enumerations\SkillShotType.cs" />
+    <Compile Include="EloBuddy\SDK\Enumerations\TargetSelectorMode.cs" />
+    <Compile Include="EloBuddy\SDK\Enumerations\TeleportStatus.cs" />
+    <Compile Include="EloBuddy\SDK\Enumerations\TeleportType.cs" />
+    <Compile Include="EloBuddy\SDK\Constants\AutoAttacks.cs" />
+    <Compile Include="EloBuddy\SDK\Constants\Dashes.cs" />
+    <Compile Include="EloBuddy\SDK\Constants\ObjectNames.cs" />
+    <EmbeddedResource Include="EloBuddy.SDK.Properties.Resources.resources" />
+  </ItemGroup>
+</Project>

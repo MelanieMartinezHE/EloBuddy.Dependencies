@@ -1,0 +1,21 @@
+﻿// Assembly EloBuddy.SDK, Version 1.0.0.0
+
+[assembly: System.Runtime.CompilerServices.Extension]
+[assembly: System.Runtime.CompilerServices.CompilationRelaxations(8)]
+[assembly: System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)]
+[assembly: System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations | System.Diagnostics.DebuggableAttribute.DebuggingModes.EnableEditAndContinue | System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints | System.Diagnostics.DebuggableAttribute.DebuggingModes.Default)]
+[assembly: System.Reflection.AssemblyTitle("EloBuddy.SDK")]
+[assembly: System.Reflection.AssemblyDescription("EloBuddy Software Development Kit")]
+[assembly: System.Reflection.AssemblyConfiguration("")]
+[assembly: System.Reflection.AssemblyCompany("EloBuddy")]
+[assembly: System.Reflection.AssemblyProduct("EloBuddy.SDK")]
+[assembly: System.Reflection.AssemblyCopyright("Copyright \x00a9 EloBuddy 2016")]
+[assembly: System.Reflection.AssemblyTrademark("EloBuddy")]
+[assembly: System.Security.AllowPartiallyTrustedCallers]
+[assembly: System.Security.SecurityRules(System.Security.SecurityRuleSet.Level1, SkipVerificationInFullTrust=true)]
+[assembly: System.Runtime.InteropServices.ComVisible(false)]
+[assembly: System.Runtime.InteropServices.Guid("6f5488f9-858c-471b-a21f-69bc1e768d9f")]
+[assembly: System.Reflection.AssemblyFileVersion("1.0.0.0")]
+[assembly: System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.5", FrameworkDisplayName=".NET Framework 4.5")]
+[assembly: System.Security.Permissions.SecurityPermission(System.Security.Permissions.SecurityAction.RequestMinimum, SkipVerification=true)]
+
